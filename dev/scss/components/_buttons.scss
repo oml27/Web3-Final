@@ -1,3 +1,16 @@
 /* =============
     Buttons
 ============= */
+
+@mixin button($size){
+    background-color: $blue;
+    padding: 16px 32px;
+    color: white;
+    text-decoration: none
+    
+    &hover{
+        background-color: $darkgray;
+        transition: 0.5s;
+    }
+
+}
