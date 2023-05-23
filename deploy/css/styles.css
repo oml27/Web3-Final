@@ -328,6 +328,7 @@ template {
 h1 {
   font-family: "Inter", sans-serif;
   font-weight: 100;
+  font-size: 40pt;
 }
 
 /* =============
@@ -360,3 +361,16 @@ textarea {
 /* =============
     Footer
 ============= */
+button {
+  background-color: #5B6A87;
+  padding: 0px 52px;
+  color: white;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+}
+buttonhover {
+  background-color: #434343;
+  transition: 0.5s;
+}

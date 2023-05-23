@@ -2,11 +2,28 @@
     Buttons
 ============= */
 
-@mixin button($size){
+@mixin button1{
     background-color: $blue;
-    padding: 16px 32px;
+    padding: 8px 40px;
     color: white;
-    text-decoration: none
+    text-decoration: none;
+
+    @include button1-text;
+    
+    &hover{
+        background-color: $darkgray;
+        transition: 0.5s;
+    }
+
+}
+
+@mixin button2{
+    background-color: $blue;
+    padding: 0px 52px;
+    color: white;
+    text-decoration: none;
+
+    @include button2-text;
     
     &hover{
         background-color: $darkgray;
