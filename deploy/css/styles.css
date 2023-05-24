@@ -322,15 +322,28 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  padding: 40px 20px;
+}
+@media (min-width: 1024px) {
+  section {
+    padding: 100px 100px;
+  }
+}
+
 /* =============
     Typography
 ============= */
-h1 {
-  font-family: "Inter", sans-serif;
-  font-weight: 100;
-  font-size: 40pt;
-}
-
 /* =============
     Buttons
 ============= */
@@ -361,16 +374,60 @@ textarea {
 /* =============
     Footer
 ============= */
-button {
+a {
   background-color: #5B6A87;
-  padding: 0px 52px;
+  padding: 8px 24px;
   color: white;
   text-decoration: none;
+  display: inline-block;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 20pt;
 }
-buttonhover {
+a:hover {
+  background-color: #434343;
+  transition: 0.5s;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 64pt;
+  color: #434343;
+}
+
+.size-button {
+  background-color: #5B6A87;
+  width: 220px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 16px 40px;
+  border-radius: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24pt;
+}
+.size-button:hover {
+  background-color: #434343;
+  transition: 0.5s;
+}
+
+.small-button {
+  background-color: #5B6A87;
+  padding: 8px 24px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+}
+.small-button:hover {
   background-color: #434343;
   transition: 0.5s;
 }

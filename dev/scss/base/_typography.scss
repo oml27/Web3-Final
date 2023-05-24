@@ -2,11 +2,7 @@
     Typography
 ============= */
 
-@mixin headline {
-    font-family: 'Inter', sans-serif;
-    font-weight: 100;
-    font-size: 40pt;
-}
+
 
 @mixin button1-text {
     font-family: 'Inter', sans-serif;
@@ -18,8 +14,4 @@
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 20pt;
-}
-
-h1{
-    @include headline;
 }

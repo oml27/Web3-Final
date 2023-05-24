@@ -4,13 +4,20 @@
 
 @mixin button1{
     background-color: $blue;
-    padding: 8px 40px;
+    width: 220px;
     color: white;
     text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 16px 40px;
+    border-radius: 18px;
 
     @include button1-text;
     
-    &hover{
+    &:hover{
         background-color: $darkgray;
         transition: 0.5s;
     }
@@ -19,13 +26,14 @@
 
 @mixin button2{
     background-color: $blue;
-    padding: 0px 52px;
+    padding: 8px 24px;
     color: white;
     text-decoration: none;
+    display: inline-block;
 
     @include button2-text;
     
-    &hover{
+    &:hover{
         background-color: $darkgray;
         transition: 0.5s;
     }
