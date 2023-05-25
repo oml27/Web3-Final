@@ -1,10 +1,21 @@
-a{
-    @include button2;
+#hero{
+
+    h1{
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        font-size: 64pt;
+        color: $text;
+    }
+
+    h3{
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        font-size: 32px;
+        color: $text;
+
+    #gallery{
+        display: flex;
+    }
 }
 
-h1{
-    font-family: 'Inter', sans-serif;
-    font-weight: 100;
-    font-size: 64pt;
-    color: $text;
 }

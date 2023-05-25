@@ -1,0 +1,21 @@
+#buynow{
+
+a{
+    @include button2;
+}
+
+h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 40pt;
+    color: $text;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 32pt;
+    color: $text;
+}
+
+}

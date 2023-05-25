@@ -374,29 +374,23 @@ textarea {
 /* =============
     Footer
 ============= */
-a {
-  background-color: #5B6A87;
-  padding: 8px 24px;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 20pt;
-}
-a:hover {
-  background-color: #434343;
-  transition: 0.5s;
-}
-
-h1 {
+#hero h1 {
   font-family: "Inter", sans-serif;
   font-weight: 100;
   font-size: 64pt;
   color: #434343;
 }
+#hero h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 32px;
+  color: #434343;
+}
+#hero h3 #gallery {
+  display: flex;
+}
 
-.size-button {
+#selection .size-button {
   background-color: #5B6A87;
   width: 220px;
   color: white;
@@ -412,22 +406,136 @@ h1 {
   font-weight: 700;
   font-size: 24pt;
 }
-.size-button:hover {
+#selection .size-button:hover {
   background-color: #434343;
   transition: 0.5s;
 }
-
-.small-button {
+#selection .small-button {
   background-color: #5B6A87;
   padding: 8px 24px;
+  width: 220px;
   color: white;
   text-decoration: none;
   display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 20pt;
 }
-.small-button:hover {
+#selection .small-button:hover {
   background-color: #434343;
   transition: 0.5s;
+}
+#selection h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 40pt;
+  color: #434343;
+}
+#selection #features h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24pt;
+  color: #434343;
+}
+#selection #features p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+  color: #434343;
+}
+#selection #colors p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+  color: #434343;
+}
+#selection #sizes p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24pt;
+  color: #434343;
+}
+
+#reviews a {
+  background-color: #5B6A87;
+  padding: 8px 24px;
+  width: 220px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+}
+#reviews a:hover {
+  background-color: #434343;
+  transition: 0.5s;
+}
+#reviews h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24pt;
+  color: #434343;
+}
+#reviews p {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 24pt;
+  color: #434343;
+}
+
+#more a {
+  background-color: #5B6A87;
+  padding: 8px 24px;
+  width: 220px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+}
+#more a:hover {
+  background-color: #434343;
+  transition: 0.5s;
+}
+
+#buynow a {
+  background-color: #5B6A87;
+  padding: 8px 24px;
+  width: 220px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+}
+#buynow a:hover {
+  background-color: #434343;
+  transition: 0.5s;
+}
+#buynow h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 40pt;
+  color: #434343;
+}
+#buynow p {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 32pt;
+  color: #434343;
 }

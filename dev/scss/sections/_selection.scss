@@ -1,7 +1,53 @@
+#selection{
+
 .size-button{
     @include button1;
 }
 
 .small-button{
     @include button2;
+}
+
+h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 40pt;
+    color: $text;
+}
+
+#features{
+
+    h3{
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 24pt;
+        color: $text;
+    }
+
+    p{
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 16pt;
+        color: $text;
+    }
+}
+
+#colors{
+    p{
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 16pt;
+        color: $text;
+    }
+}
+
+#sizes{
+    p{
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 24pt;
+        color: $text;
+    }
+}
+
 }
