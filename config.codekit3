@@ -21,6 +21,45 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/Cart_Icon.png" : {
+      "ft" : 32768,
+      "iS" : 557,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Cart_Icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Logo_Icon.png" : {
+      "ft" : 32768,
+      "iS" : 612,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Logo_Icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Logo_Text.png" : {
+      "ft" : 32768,
+      "iS" : 1216,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Logo_Text.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/Product\/Kitchen_1.png" : {
       "ft" : 32768,
       "iS" : 1405440,

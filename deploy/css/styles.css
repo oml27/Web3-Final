@@ -75,6 +75,9 @@ pre {
  */
 a {
   background-color: transparent;
+  color: black;
+  text-decoration-style: none;
+  text-decoration-line: none;
 }
 
 /**
@@ -368,6 +371,90 @@ textarea {
 /* =============
     Navigation
 ============= */
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #logo-text {
+  display: none;
+}
+@media (min-width: 1024px) {
+  header #logo-text {
+    display: inline;
+  }
+}
+header #burger-container {
+  margin-left: auto;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+header #burger-container #burgerBtn {
+  display: block;
+}
+header #burger-container #burgerBtn span,
+header #burger-container #burgerBtn span::before,
+header #burger-container #burgerBtn span::after {
+  height: 4px;
+  width: 24px;
+  background-color: black;
+  border-radius: 4px;
+}
+header #burger-container #burgerBtn span {
+  display: block;
+  position: relative;
+}
+header #burger-container #burgerBtn span::before {
+  position: absolute;
+  content: " ";
+  top: -10px;
+}
+header #burger-container #burgerBtn span::after {
+  position: absolute;
+  content: " ";
+  top: 10px;
+}
+@media (min-width: 1024px) {
+  header #burger-container {
+    display: none;
+  }
+}
+header #main-menu {
+  display: none;
+}
+header #main-menu.show-menu {
+  display: inline;
+}
+@media (min-width: 1024px) {
+  header #main-menu {
+    display: inline-flex;
+    display: flex;
+    margin-left: auto;
+  }
+  header #main-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 48px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20pt;
+    color: black;
+    list-style: none;
+  }
+  header #main-menu input {
+    margin-left: 48px;
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 16pt;
+    border-radius: 4px;
+    background-color: #D9D9D9;
+    border: none;
+  }
+}
+
 /* =============
     Header
 ============= */

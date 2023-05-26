@@ -1,3 +1,103 @@
 /* =============
     Navigation
 ============= */
+
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    #logo-text {
+
+        display: none;
+
+        @include lg {
+            display: inline;
+        }
+    }
+
+    #burger-container {
+
+        margin-left: auto;
+        display: block;
+        position: relative;
+        z-index: 3;
+
+
+        #burgerBtn {
+
+            display: block;
+
+            span,
+            span::before,
+            span::after {
+                height: 4px;
+                width: 24px;
+                background-color: black;
+                border-radius: 4px;
+
+            }
+
+            span {
+                display: block;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: " ";
+                    top: -10px;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: " ";
+                    top: 10px;
+                }
+            }
+        }
+
+        @include lg {
+            display: none;
+        }
+
+    }
+
+    #main-menu {
+        display: none;
+
+        &.show-menu{
+            display: inline;
+        }
+
+        @include lg {
+            display: inline-flex;
+            display: flex;
+            margin-left: auto;
+
+            ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 48px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 20pt;
+            color: black;
+            list-style: none;
+            }
+
+            input{
+                margin-left: 48px;
+                display: block;
+                font-family: 'Inter', sans-serif;
+                font-size: 16pt;
+                border-radius: 4px;
+                background-color: $lightgray;
+                border: none;
+            }
+
+        }
+    }
+}
