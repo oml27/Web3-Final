@@ -335,15 +335,6 @@ img {
   max-width: 100%;
 }
 
-section {
-  padding: 40px 20px;
-}
-@media (min-width: 1024px) {
-  section {
-    padding: 100px 100px;
-  }
-}
-
 /* =============
     Typography
 ============= */
@@ -376,6 +367,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 40px 20px;
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 100px 100px;
+  }
 }
 header #logo-text {
   display: none;
@@ -390,31 +387,19 @@ header #burger-container {
   display: block;
   position: relative;
   z-index: 3;
+  margin-right: 12px;
 }
 header #burger-container #burgerBtn {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
 }
-header #burger-container #burgerBtn span,
-header #burger-container #burgerBtn span::before,
-header #burger-container #burgerBtn span::after {
+header #burger-container #burgerBtn div {
   height: 4px;
   width: 24px;
   background-color: black;
   border-radius: 4px;
-}
-header #burger-container #burgerBtn span {
-  display: block;
-  position: relative;
-}
-header #burger-container #burgerBtn span::before {
-  position: absolute;
-  content: " ";
-  top: -10px;
-}
-header #burger-container #burgerBtn span::after {
-  position: absolute;
-  content: " ";
-  top: 10px;
 }
 @media (min-width: 1024px) {
   header #burger-container {
@@ -426,6 +411,22 @@ header #main-menu {
 }
 header #main-menu.show-menu {
   display: inline;
+}
+@media only screen and (max-width: 1024px) {
+  header #main-menu {
+    background-color: #5B6A87;
+    color: white;
+    transition: 0.3s;
+    height: 100vw;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+  }
+}
+header #main-menu.show-menu {
+  right: 0;
+  transition: 0.3s;
 }
 @media (min-width: 1024px) {
   header #main-menu {
@@ -473,7 +474,7 @@ header #main-menu.show-menu {
   font-size: 32px;
   color: #434343;
 }
-#hero h3 #gallery {
+#hero #gallery {
   display: flex;
 }
 
@@ -539,13 +540,57 @@ header #main-menu.show-menu {
   font-size: 16pt;
   color: #434343;
 }
+#selection #colors ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#selection #colors ul li div {
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  background-color: black;
+}
+#selection #colors ul li:nth-child(1) div {
+  background-color: #D9D9D9;
+}
+#selection #colors ul li:nth-child(2) div {
+  background-color: #000000;
+}
+#selection #colors ul li:nth-child(3) div {
+  background-color: #F3ECDF;
+}
+#selection #colors ul li:nth-child(4) div {
+  background-color: #C5D4DF;
+}
+#selection #colors ul li:nth-child(5) div {
+  background-color: #AEC8BD;
+}
+#selection #colors ul li:nth-child(6) div {
+  background-color: #E4BDCF;
+}
+#selection #colors ul li:nth-child(7) div {
+  background-color: #AE2422;
+}
+#selection #colors ul li:nth-child(8) div {
+  background-color: #FFFFFF;
+  border: #000000 solid 1px;
+}
+#selection #colors ul li:nth-child(9) div {
+  background-color: #555555;
+}
+@media (min-width: 1024px) {
+  #selection #colors ul {
+    width: 500px;
+  }
+}
 #selection #sizes p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 24pt;
   color: #434343;
 }
-
 #reviews a {
   background-color: #5B6A87;
   padding: 8px 24px;
