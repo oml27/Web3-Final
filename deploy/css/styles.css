@@ -335,6 +335,10 @@ img {
   max-width: 100%;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 /* =============
     Typography
 ============= */
@@ -367,12 +371,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 20px;
-}
-@media (min-width: 1024px) {
-  header {
-    padding: 100px 100px;
-  }
+  padding: 24px;
 }
 header #logo-text {
   display: none;
@@ -415,13 +414,21 @@ header #main-menu.show-menu {
 @media only screen and (max-width: 1024px) {
   header #main-menu {
     background-color: #5B6A87;
-    color: white;
     transition: 0.3s;
     height: 100vw;
     width: 80%;
     position: absolute;
     top: 0;
     right: -100%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 40pt;
+  }
+  header #main-menu a {
+    color: white;
+  }
+  header #main-menu input {
+    display: none;
   }
 }
 header #main-menu.show-menu {
@@ -455,6 +462,9 @@ header #main-menu.show-menu {
     border: none;
   }
 }
+header #cart-container {
+  margin-left: 24px;
+}
 
 /* =============
     Header
@@ -467,15 +477,27 @@ header #main-menu.show-menu {
   font-weight: 100;
   font-size: 64pt;
   color: #434343;
+  text-align: center;
 }
 #hero h3 {
   font-family: "Inter", sans-serif;
   font-weight: 100;
   font-size: 32px;
   color: #434343;
+  text-align: center;
 }
 #hero #gallery {
   display: flex;
+  justify-content: center;
+}
+#hero #gallery #image2-3 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #hero #gallery #image2-3 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 #selection .size-button {

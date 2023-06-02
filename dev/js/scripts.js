@@ -1,4 +1,4 @@
-let burgerBtn = document.querySelector("#burger-btn");
+let burgerBtn = document.querySelector("#burgerBtn");
 let mainMenu = document.querySelector("#main-menu");
 
 let canSeeMenu = false;

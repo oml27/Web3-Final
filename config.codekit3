@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/deploy\/checkout.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -274,6 +282,38 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/deploy\/thankyou.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 0
+    },
+    "\/dev\/checkout.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/Checkout-Page\/_cart.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Checkout-Page\/_cart.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/Checkout-Page\/_form.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Checkout-Page\/_form.html",
+      "oF" : 0
+    },
     "\/dev\/content\/Product-Page\/_buynow.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -314,6 +354,14 @@
       "oAP" : "\/dev\/content\/Product-Page\/_selection.html",
       "oF" : 0
     },
+    "\/dev\/content\/ThankYou-Page\/_confirmation.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/ThankYou-Page\/_confirmation.html",
+      "oF" : 0
+    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -342,7 +390,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
       "oF" : 0
     },
@@ -604,6 +652,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/thankyou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 2
     }
   },
   "hooks" : [

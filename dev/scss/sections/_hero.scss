@@ -5,6 +5,7 @@
         font-weight: 100;
         font-size: 64pt;
         color: $text;
+        text-align: center;
     }
 
     h3{
@@ -12,10 +13,22 @@
         font-weight: 100;
         font-size: 32px;
         color: $text;
-}
+        text-align: center;
+    }
 
 #gallery{
     display: flex;
+    justify-content: center;
+
+    #image2-3{
+        display: none;
+
+        @include lg{
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
 }
 
 }
