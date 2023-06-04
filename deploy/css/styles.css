@@ -544,6 +544,10 @@ header #cart-container {
   font-size: 40pt;
   color: #434343;
 }
+#selection #features {
+  text-align: center;
+  margin-right: 24px;
+}
 #selection #features h3 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -555,6 +559,11 @@ header #cart-container {
   font-weight: 400;
   font-size: 16pt;
   color: #434343;
+}
+@media (min-width: 1024px) {
+  #selection #features {
+    text-align: right;
+  }
 }
 #selection #colors p {
   font-family: "Inter", sans-serif;
@@ -607,12 +616,34 @@ header #cart-container {
     width: 500px;
   }
 }
+#selection #sizes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
 #selection #sizes p {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 24pt;
+  font-weight: 100;
+  font-size: 16pt;
   color: #434343;
 }
+#selection #sizes .size-option {
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 1024px) {
+  #selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+#selection .small-button {
+  margin: 24px;
+}
+
 #reviews a {
   background-color: #5B6A87;
   padding: 8px 24px;
@@ -626,6 +657,7 @@ header #cart-container {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 20pt;
+  justify-content: center;
 }
 #reviews a:hover {
   background-color: #434343;

@@ -1,5 +1,6 @@
 #selection{
 
+
 .size-button{
     @include button1;
 }
@@ -17,6 +18,9 @@ h2{
 
 #features{
 
+    text-align: center;
+    margin-right: 24px;
+
     h3{
         font-family: 'Inter', sans-serif;
         font-weight: 700;
@@ -29,6 +33,10 @@ h2{
         font-weight: 400;
         font-size: 16pt;
         color: $text;
+    }
+
+    @include lg{
+        text-align: right;
     }
 }
 
@@ -74,16 +82,34 @@ h2{
 }
 
 #sizes{
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+
     p{
         font-family: 'Inter', sans-serif;
-        font-weight: 400;
-        font-size: 24pt;
+        font-weight: 100;
+        font-size: 16pt;
         color: $text;
+    }
+    
+    .size-option{
+        display: flex;
+        flex-direction: row;
     }
 }
 
 @include lg{
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.small-button{
+    margin: 24px;
 }
 
 }
