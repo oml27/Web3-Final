@@ -766,7 +766,10 @@ header #cart-container {
   display: flex;
 }
 #buynow div img {
-  width: 20%;
+  width: 15%;
+  height: 15%;
+  margin-left: 16px;
+  align-items: center;
 }
 #buynow div a {
   margin: 8px;
