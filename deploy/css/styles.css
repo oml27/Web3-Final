@@ -649,6 +649,12 @@ header #cart-container {
   padding-right: 32px;
   padding-left: 32px;
 }
+@media (min-width: 1024px) {
+  #reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 #reviews .center {
   display: flex;
   justify-content: center;
@@ -720,6 +726,12 @@ header #cart-container {
   }
 }
 
+#buynow {
+  background-color: #434343;
+}
+#buynow #bigimage {
+  margin-top: 16px;
+}
 #buynow a {
   background-color: #5B6A87;
   padding: 8px 24px;
@@ -742,11 +754,20 @@ header #cart-container {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 40pt;
-  color: #434343;
+  color: white;
 }
 #buynow p {
   font-family: "Inter", sans-serif;
   font-weight: 100;
   font-size: 32pt;
-  color: #434343;
+  color: white;
+}
+#buynow div {
+  display: flex;
+}
+#buynow div img {
+  width: 20%;
+}
+#buynow div a {
+  margin: 8px;
 }

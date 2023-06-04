@@ -4,6 +4,11 @@
     padding-right: 32px;
     padding-left: 32px;
 
+    @include lg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .center{
         a{
         @include button2;

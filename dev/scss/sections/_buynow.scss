@@ -1,5 +1,11 @@
 #buynow{
 
+background-color: $darkgray;
+
+#bigimage{
+    margin-top: 16px;
+}
+
 a{
     @include button2;
 }
@@ -8,14 +14,26 @@ h2{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 40pt;
-    color: $text;
+    color: white;
 }
 
 p{
     font-family: 'Inter', sans-serif;
     font-weight: 100;
     font-size: 32pt;
-    color: $text;
+    color: white;
+}
+
+div{
+    display: flex;
+
+    img{
+        width: 20%;
+    }
+
+    a{
+        margin: 8px;
+    }
 }
 
 }

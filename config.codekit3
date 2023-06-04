@@ -68,6 +68,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/Product\/color_selection.png" : {
+      "ft" : 32768,
+      "iS" : 1328,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Product\/color_selection.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/Product\/Kitchen_1.png" : {
       "ft" : 32768,
       "iS" : 1405440,
@@ -255,6 +268,19 @@
       "iS" : 2197,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/Reviews\/Stars_4.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/social_icons.png" : {
+      "ft" : 32768,
+      "iS" : 3252,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/social_icons.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
