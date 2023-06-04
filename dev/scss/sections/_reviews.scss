@@ -1,8 +1,18 @@
 #reviews{
 
-    a{
+    margin-bottom: 40px;
+    padding-right: 32px;
+    padding-left: 32px;
+
+    .center{
+        a{
         @include button2;
+        }
+        display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 24px;
     }
 
     h4{
