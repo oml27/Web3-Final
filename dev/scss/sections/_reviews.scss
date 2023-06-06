@@ -5,8 +5,11 @@
     padding-left: 32px;
 
     @include lg{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        .reviewcontainer{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
     }
 
     .center{

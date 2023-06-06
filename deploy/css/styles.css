@@ -473,7 +473,17 @@ header #cart-container {
     Footer
 ============= */
 footer {
-  background-color: gold;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  color: #434343;
+  text-align: center;
+  margin-top: 24px;
+  border-top: 1px solid #434343;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 72px;
 }
 
 #hero h1 {
@@ -648,15 +658,44 @@ footer {
   margin: 24px;
 }
 
+.small-button {
+  background-color: #5B6A87;
+  padding: 8px 24px;
+  width: 220px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+  margin-bottom: 72px;
+}
+.small-button:hover {
+  background-color: #434343;
+  transition: 0.5s;
+}
+
+.inlinecenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+}
+
 #reviews {
   margin-bottom: 40px;
   padding-right: 32px;
   padding-left: 32px;
 }
 @media (min-width: 1024px) {
-  #reviews {
+  #reviews .reviewcontainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
   }
 }
 #reviews .center {
