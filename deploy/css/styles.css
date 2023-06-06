@@ -472,6 +472,10 @@ header #cart-container {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: gold;
+}
+
 #hero h1 {
   font-family: "Inter", sans-serif;
   font-weight: 100;
@@ -696,7 +700,20 @@ header #cart-container {
 #more img {
   margin-top: 32px;
 }
-#more a {
+@media (min-width: 1024px) {
+  #more #items {
+    display: flex;
+    flex-direction: row;
+  }
+}
+#more .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 24px;
+}
+#more .center a {
   background-color: #5B6A87;
   padding: 8px 24px;
   width: 220px;
@@ -709,21 +726,10 @@ header #cart-container {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 20pt;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 24px;
 }
-#more a:hover {
+#more .center a:hover {
   background-color: #434343;
   transition: 0.5s;
-}
-@media (min-width: 1024px) {
-  #more #items {
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 #buynow {
@@ -750,11 +756,34 @@ header #cart-container {
   background-color: #434343;
   transition: 0.5s;
 }
+#buynow #gray {
+  background-color: #5B6A87;
+  padding: 8px 24px;
+  width: 220px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+  background-color: #5A5A5A;
+}
+#buynow #gray:hover {
+  background-color: #434343;
+  transition: 0.5s;
+}
 #buynow h2 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 40pt;
   color: white;
+}
+#buynow #four {
+  padding-left: 16px;
+  font-weight: 700;
 }
 #buynow p {
   font-family: "Inter", sans-serif;

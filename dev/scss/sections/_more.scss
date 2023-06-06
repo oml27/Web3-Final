@@ -4,23 +4,23 @@
         margin-top: 32px;
     }
 
-    
-        a{
-        @include button2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 24px;
-        }
-
-
     #items{
 
         @include lg{ 
             display: flex;
             flex-direction: row;
     }
+}
+
+.center{
+    a{
+    @include button2;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 24px;
 }
     
 

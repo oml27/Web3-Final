@@ -1,42 +1,52 @@
-#buynow{
+#buynow {
 
-background-color: $darkgray;
+    background-color: $darkgray;
 
-#bigimage{
-    margin-top: 16px;
-}
-
-a{
-    @include button2;
-}
-
-h2{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 40pt;
-    color: white;
-}
-
-p{
-    font-family: 'Inter', sans-serif;
-    font-weight: 100;
-    font-size: 32pt;
-    color: white;
-}
-
-div{
-    display: flex;
-
-    img{
-        width: 15%;
-        height: 15%;
-        margin-left: 16px;
-        align-items: center;
+    #bigimage {
+        margin-top: 16px;
     }
 
-    a{
-        margin: 8px;
+    a {
+        @include button2;
     }
-}
+
+    #gray {
+        @include button2;
+        background-color: #5A5A5A;
+    }
+
+    h2 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 40pt;
+        color: white;
+    }
+
+    #four{
+        padding-left: 16px;
+        font-weight: 700;
+    }
+
+    p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        font-size: 32pt;
+        color: white;
+    }
+
+    div {
+        display: flex;
+
+        img {
+            width: 15%;
+            height: 15%;
+            margin-left: 16px;
+            align-items: center;
+        }
+
+        a {
+            margin: 8px;
+        }
+    }
 
 }
