@@ -1,27 +1,33 @@
-#more{
+#more {
 
-    img{
+    img {
         margin-top: 32px;
     }
 
-    #items{
+    #items {
 
-        @include lg{ 
+        @include lg {
             display: flex;
             flex-direction: row;
+        }
     }
-}
 
-.center{
-    a{
-    @include button2;
+    .center {
+        a {
+            @include button2;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 24px;
     }
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 24px;
-}
-    
+
+    @include lg {
+        padding-left: 100px;
+        padding-right: 100px;
+        align-items: center;
+    }
 
 }

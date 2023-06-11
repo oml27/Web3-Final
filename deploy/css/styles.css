@@ -485,6 +485,24 @@ footer {
   flex-direction: column;
   padding: 72px;
 }
+footer #subscribe {
+  background-color: #5B6A87;
+  padding: 8px 24px;
+  width: 220px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+}
+footer #subscribe:hover {
+  background-color: #434343;
+  transition: 0.5s;
+}
 
 #hero h1 {
   font-family: "Inter", sans-serif;
@@ -770,12 +788,21 @@ footer {
   background-color: #434343;
   transition: 0.5s;
 }
+@media (min-width: 1024px) {
+  #more {
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+  }
+}
 
 #buynow {
   background-color: #434343;
-}
-#buynow #bigimage {
-  margin-top: 16px;
+  width: 600px;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  border-radius: 24px;
 }
 #buynow a {
   background-color: #5B6A87;
@@ -830,15 +857,10 @@ footer {
   font-size: 32pt;
   color: white;
 }
-#buynow div {
-  display: flex;
-}
-#buynow div img {
-  width: 15%;
-  height: 15%;
-  margin-left: 16px;
-  align-items: center;
-}
-#buynow div a {
+#buynow a {
   margin: 8px;
+}
+#buynow #info {
+  display: flex;
+  flex-direction: column;
 }

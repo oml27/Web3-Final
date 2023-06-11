@@ -1,10 +1,11 @@
 #buynow {
 
     background-color: $darkgray;
-
-    #bigimage {
-        margin-top: 16px;
-    }
+    width: 600px;
+    padding: 24px;
+    display:flex;
+    justify-content: center;
+    border-radius: 24px;
 
     a {
         @include button2;
@@ -22,7 +23,7 @@
         color: white;
     }
 
-    #four{
+    #four {
         padding-left: 16px;
         font-weight: 700;
     }
@@ -34,19 +35,12 @@
         color: white;
     }
 
-    div {
-        display: flex;
-
-        img {
-            width: 15%;
-            height: 15%;
-            margin-left: 16px;
-            align-items: center;
-        }
-
-        a {
-            margin: 8px;
-        }
+    a {
+        margin: 8px;
     }
 
+    #info{
+        display: flex;
+        flex-direction: column;
+    }
 }
