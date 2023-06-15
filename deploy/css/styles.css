@@ -757,20 +757,11 @@ footer #subscribe:hover {
 #more img {
   margin-top: 32px;
 }
-@media (min-width: 1024px) {
-  #more #items {
-    display: flex;
-    flex-direction: row;
-  }
-}
-#more .center {
+#more #items {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 24px;
+  flex-wrap: wrap;
 }
-#more .center a {
+#more #items a {
   background-color: #5B6A87;
   padding: 8px 24px;
   width: 220px;
@@ -784,15 +775,24 @@ footer #subscribe:hover {
   font-weight: 700;
   font-size: 20pt;
 }
-#more .center a:hover {
+#more #items a:hover {
   background-color: #434343;
   transition: 0.5s;
 }
 @media (min-width: 1024px) {
-  #more {
-    padding-left: 100px;
-    padding-right: 100px;
+  #more #items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
     align-items: center;
+  }
+  #more #items a {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    text-align: center;
+    align-self: center;
   }
 }
 
@@ -863,4 +863,65 @@ footer #subscribe:hover {
 #buynow #info {
   display: flex;
   flex-direction: column;
+}
+
+#cart {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+#cart h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 40pt;
+  color: #434343;
+}
+#cart #four {
+  padding-left: 16px;
+  font-weight: 700;
+}
+#cart p {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 32pt;
+  color: #434343;
+}
+
+#items {
+  display: flex;
+  flex-wrap: wrap;
+}
+#items a {
+  background-color: #5B6A87;
+  padding: 8px 24px;
+  width: 220px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+}
+#items a:hover {
+  background-color: #434343;
+  transition: 0.5s;
+}
+@media (min-width: 1024px) {
+  #items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  #items a {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    text-align: center;
+    align-self: center;
+  }
 }

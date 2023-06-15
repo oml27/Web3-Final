@@ -6,28 +6,29 @@
 
     #items {
 
-        @include lg {
-            display: flex;
-            flex-direction: row;
-        }
-    }
+        display:flex;
+        flex-wrap: wrap;
 
-    .center {
-        a {
+        a{
             @include button2;
         }
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 24px;
+        @include lg {
+                a {
+                    display: flex;
+                    justify-content: center;
+                    height: fit-content;
+                    text-align: center;
+                    align-self: center;
+            
+                }
+            
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+            }
+        }
     }
 
-    @include lg {
-        padding-left: 100px;
-        padding-right: 100px;
-        align-items: center;
-    }
-
-}
