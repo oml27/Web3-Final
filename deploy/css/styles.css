@@ -503,6 +503,17 @@ footer #subscribe:hover {
   background-color: #434343;
   transition: 0.5s;
 }
+footer input {
+  margin-left: 48px;
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 16pt;
+  border-radius: 4px;
+  background-color: #D9D9D9;
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+}
 
 #hero h1 {
   font-family: "Inter", sans-serif;
@@ -754,12 +765,20 @@ footer #subscribe:hover {
   color: #434343;
 }
 
-#more img {
+#more #bigphoto {
   margin-top: 32px;
+}
+@media (min-width: 1024px) {
+  #more #bigphoto {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
 }
 #more #items {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 #more #items a {
   background-color: #5B6A87;
@@ -798,11 +817,12 @@ footer #subscribe:hover {
 
 #buynow {
   background-color: #434343;
-  width: 600px;
-  padding: 24px;
-  display: flex;
-  justify-content: center;
+  width: 500px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  display: grid;
   border-radius: 24px;
+  margin: 20px;
 }
 #buynow a {
   background-color: #5B6A87;
@@ -844,7 +864,7 @@ footer #subscribe:hover {
 #buynow h2 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 40pt;
+  font-size: 30pt;
   color: white;
 }
 #buynow #four {
@@ -854,7 +874,7 @@ footer #subscribe:hover {
 #buynow p {
   font-family: "Inter", sans-serif;
   font-weight: 100;
-  font-size: 32pt;
+  font-size: 22pt;
   color: white;
 }
 #buynow a {
@@ -863,6 +883,12 @@ footer #subscribe:hover {
 #buynow #info {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1024px) {
+  #buynow {
+    margin-left: 600px;
+    margin-right: 600px;
+  }
 }
 
 #cart {
@@ -933,6 +959,7 @@ footer #subscribe:hover {
 
 #form {
   padding-top: 80px;
+  align-items: center;
 }
 #form a {
   background-color: #5B6A87;
@@ -947,6 +974,8 @@ footer #subscribe:hover {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 20pt;
+  margin-left: 700px;
+  margin-left: 700px;
 }
 #form a:hover {
   background-color: #434343;
@@ -972,8 +1001,8 @@ footer #subscribe:hover {
 @media (min-width: 1024px) {
   #form #cardinfo {
     justify-self: center;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 600px;
+    margin-right: 600px;
   }
 }
 #form #cardinfo form {
@@ -988,6 +1017,7 @@ footer #subscribe:hover {
   color: #434343;
   padding: 18px;
   margin: 12px;
+  border: none;
 }
 #form #shipinfo {
   display: grid;
@@ -995,8 +1025,8 @@ footer #subscribe:hover {
 @media (min-width: 1024px) {
   #form #shipinfo {
     justify-self: center;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 600px;
+    margin-right: 600px;
   }
 }
 #form #shipinfo form {
@@ -1011,4 +1041,83 @@ footer #subscribe:hover {
   color: #434343;
   padding: 18px;
   margin: 12px;
+  border: none;
+}
+
+#thankyou {
+  padding: 24px;
+  display: grid;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  #thankyou {
+    display: flex;
+  }
+  #thankyou #logo img {
+    width: 500%;
+  }
+}
+#thankyou h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 40pt;
+  color: #434343;
+}
+#thankyou #four {
+  padding-left: 16px;
+  font-weight: 700;
+}
+#thankyou p {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 32pt;
+  color: #434343;
+}
+
+#ordertext {
+  padding: 40px;
+  text-align: center;
+  margin-top: -60px;
+}
+#ordertext h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 30pt;
+  color: #434343;
+}
+#ordertext p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20pt;
+  color: #434343;
+}
+#ordertext #click {
+  color: #5B6A87;
+  text-decoration: underline;
+}
+#ordertext a {
+  background-color: #5B6A87;
+  padding: 8px 24px;
+  width: 220px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+}
+#ordertext a:hover {
+  background-color: #434343;
+  transition: 0.5s;
+}
+@media (min-width: 1024px) {
+  #ordertext h2 {
+    font-size: 48pt;
+  }
+  #ordertext p {
+    font-size: 28pt;
+  }
 }

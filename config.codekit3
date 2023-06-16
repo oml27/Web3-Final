@@ -68,6 +68,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/Logo.png" : {
+      "ft" : 32768,
+      "iS" : 3060,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/Product\/color_selection.png" : {
       "ft" : 32768,
       "iS" : 1328,

@@ -22,4 +22,16 @@ footer{
         @include button2;
     }
 
+    input{
+                margin-left: 48px;
+                display: block;
+                font-family: 'Inter', sans-serif;
+                font-size: 16pt;
+                border-radius: 4px;
+                background-color: $lightgray;
+                border: none;
+                padding: 20px;
+                margin-bottom: 20px;
+    }
+
 }

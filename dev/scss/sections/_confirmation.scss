@@ -1,0 +1,74 @@
+#thankyou{
+    padding: 24px;
+    display: grid;
+    justify-content: center;
+
+    @include lg{
+        display: flex;
+        #logo{
+        img{
+        width: 500%;
+        }
+        }
+
+    }
+
+    h2 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 40pt;
+        color: $text;
+    }
+
+    #four {
+        padding-left: 16px;
+        font-weight: 700;
+    }
+
+    p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        font-size: 32pt;
+        color: $text;
+    }
+
+
+}
+
+#ordertext{
+
+    padding: 40px;
+    text-align: center;
+    margin-top: -60px;
+
+    h2{
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        font-size: 30pt;
+        color: $text;
+    }
+    p{
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 20pt;
+        color: $text;
+    }
+
+    #click{
+        color: $blue;
+        text-decoration: underline;
+    }
+
+    a{
+        @include button2;
+    }
+
+    @include lg{
+        h2{
+            font-size: 48pt;
+        }
+        p{
+            font-size: 28pt;
+        }
+    }
+}
