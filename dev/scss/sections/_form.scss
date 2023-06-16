@@ -1,5 +1,5 @@
 #form{
-    padding-top: 32px;
+    padding-top: 80px;
 
     a{
         @include button2;
@@ -15,9 +15,19 @@
 
     #cardinfo{
         background-color: rgb(233, 233, 233);
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        display: grid;
+        margin-left: 24px;
+        margin-right: 24px;
+        border-radius: 16px;
+        justify-content: center;
+        text-align: center;
+        width: 500px;
+
+        @include lg{
+            justify-self: center;
+            margin-left: 500px;
+            margin-right: 500px;
+        }
 
         form{
             font-family: 'Inter', sans-serif;
@@ -27,16 +37,20 @@
             input{
                 border-radius: 10px;
                 background-color: $lightgray;
-                color: white;
+                color: $text;
                 padding: 18px;
                 margin: 12px;
             }
         }
     }
     #shipinfo{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        display: grid;
+
+        @include lg{
+            justify-self: center;
+            margin-left: 500px;
+            margin-right: 500px;
+        }
 
         form{
             font-family: 'Inter', sans-serif;
@@ -46,7 +60,7 @@
             input{
                 border-radius: 10px;
                 background-color: $lightgray;
-                color: white;
+                color: $text;
                 padding: 18px;
                 margin: 12px;
             }

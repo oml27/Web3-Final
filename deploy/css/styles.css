@@ -867,8 +867,13 @@ footer #subscribe:hover {
 
 #cart {
   padding: 24px;
-  display: flex;
+  display: grid;
   justify-content: center;
+}
+@media (min-width: 1024px) {
+  #cart {
+    display: flex;
+  }
 }
 #cart h2 {
   font-family: "Inter", sans-serif;
@@ -927,7 +932,7 @@ footer #subscribe:hover {
 }
 
 #form {
-  padding-top: 32px;
+  padding-top: 80px;
 }
 #form a {
   background-color: #5B6A87;
@@ -956,9 +961,20 @@ footer #subscribe:hover {
 }
 #form #cardinfo {
   background-color: rgb(233, 233, 233);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  display: grid;
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 16px;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+}
+@media (min-width: 1024px) {
+  #form #cardinfo {
+    justify-self: center;
+    margin-left: 500px;
+    margin-right: 500px;
+  }
 }
 #form #cardinfo form {
   font-family: "Inter", sans-serif;
@@ -969,14 +985,19 @@ footer #subscribe:hover {
 #form #cardinfo form input {
   border-radius: 10px;
   background-color: #D9D9D9;
-  color: white;
+  color: #434343;
   padding: 18px;
   margin: 12px;
 }
 #form #shipinfo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  display: grid;
+}
+@media (min-width: 1024px) {
+  #form #shipinfo {
+    justify-self: center;
+    margin-left: 500px;
+    margin-right: 500px;
+  }
 }
 #form #shipinfo form {
   font-family: "Inter", sans-serif;
@@ -987,7 +1008,7 @@ footer #subscribe:hover {
 #form #shipinfo form input {
   border-radius: 10px;
   background-color: #D9D9D9;
-  color: white;
+  color: #434343;
   padding: 18px;
   margin: 12px;
 }
