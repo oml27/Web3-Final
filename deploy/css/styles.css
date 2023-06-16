@@ -925,3 +925,69 @@ footer #subscribe:hover {
     align-self: center;
   }
 }
+
+#form {
+  padding-top: 32px;
+}
+#form a {
+  background-color: #5B6A87;
+  padding: 8px 24px;
+  width: 220px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+}
+#form a:hover {
+  background-color: #434343;
+  transition: 0.5s;
+}
+#form h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 40pt;
+  color: #434343;
+  padding: 16px;
+}
+#form #cardinfo {
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#form #cardinfo form {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+  padding: 40px;
+}
+#form #cardinfo form input {
+  border-radius: 10px;
+  background-color: #D9D9D9;
+  color: white;
+  padding: 18px;
+  margin: 12px;
+}
+#form #shipinfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#form #shipinfo form {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+  padding: 40px;
+}
+#form #shipinfo form input {
+  border-radius: 10px;
+  background-color: #D9D9D9;
+  color: white;
+  padding: 18px;
+  margin: 12px;
+}

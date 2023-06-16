@@ -1,0 +1,55 @@
+#form{
+    padding-top: 32px;
+
+    a{
+        @include button2;
+    }
+
+    h1{
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        font-size: 40pt;
+        color: $text;
+        padding: 16px;
+    }
+
+    #cardinfo{
+        background-color: rgb(233, 233, 233);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        form{
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 16pt;
+            padding: 40px;
+            input{
+                border-radius: 10px;
+                background-color: $lightgray;
+                color: white;
+                padding: 18px;
+                margin: 12px;
+            }
+        }
+    }
+    #shipinfo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        form{
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 16pt;
+            padding: 40px;
+            input{
+                border-radius: 10px;
+                background-color: $lightgray;
+                color: white;
+                padding: 18px;
+                margin: 12px;
+            }
+        }
+    }
+}
